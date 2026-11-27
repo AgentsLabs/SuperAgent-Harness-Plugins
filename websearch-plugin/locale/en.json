@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Model web search",
-    "description": "Adds a model_websearch tool and two no-key search providers: DuckDuckGo for general web results and Wikipedia OpenSearch for encyclopedia results. Returns source URLs and snippets; network access is required, and upstream services may rate-limit requests.",
+    "title": "SuperAgent free search",
+    "description": "Model-independent free search: use model_websearch or choose SuperAgent free search in Settings → Web search provider for the built-in web_search tool on any tool-capable model. No model or search API key is used for searches. Auto mode tries DuckDuckGo then clearly reports a Wikipedia encyclopedia fallback. Public endpoints can block or rate-limit; linked pages are not fetched.",
     "detail": "docs/DETAIL.md"
   }
 }

@@ -1,20 +1,27 @@
 {
   "name": "@local/model-websearch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "description": "Free model web search with DuckDuckGo HTML and Wikipedia OpenSearch providers.",
   "homepage": "https://AgentsLabs.github.io/SuperAgent-Harness-Plugins/",
   "engines": {
-    "dsh": ">=1.0.0"
+    "dsh": ">=0.2.2-rc.5"
   },
   "exports": {
     ".": "./index.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgentsLabs/SuperAgent-Harness-Plugins.git",
+    "directory": "websearch-plugin"
+  },
+  "scripts": { "test": "node --test test/*.test.js" },
   "files": [
     "index.js",
+    "search.js",
     "cordis.patch.yml",
     "locale/*.json",
     "docs",

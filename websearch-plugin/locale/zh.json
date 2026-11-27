@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "模型网页搜索",
-    "description": "添加 model_websearch 工具和两个无需密钥的搜索提供方：DuckDuckGo 通用网页搜索，以及 Wikipedia OpenSearch 百科搜索。返回来源网址和摘要；需要网络连接，上游服务可能会限流。",
+    "description": "与模型无关的免费搜索：调用 model_websearch，或在设置中选择 SuperAgent free search，使内置 web_search 适用于支持工具的模型。搜索不使用模型或搜索 API 密钥。自动模式先尝试 DuckDuckGo，失败时明确标注 Wikipedia 百科回退。公共端点可能封锁或限流；不会抓取结果网页。",
     "detail": "docs/DETAIL.md"
   }
 }
