@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Free model web search with DuckDuckGo HTML and Wikipedia OpenSearch providers.",
+  "homepage": "https://AgentsLabs.github.io/SuperAgent-Harness-Plugins/",
   "engines": {
     "dsh": ">=1.0.0"
   },
