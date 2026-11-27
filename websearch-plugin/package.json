@@ -1,0 +1,25 @@
+{
+  "name": "@local/model-websearch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Free model web search with DuckDuckGo HTML and Wikipedia OpenSearch providers.",
+  "engines": {
+    "dsh": ">=1.0.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

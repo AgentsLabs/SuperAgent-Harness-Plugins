@@ -1,0 +1,4 @@
+- insert:
+    - id: model-websearch
+      name: '@local/model-websearch'
+      config: {}

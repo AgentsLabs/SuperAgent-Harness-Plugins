@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "模型网页搜索",
+    "description": "添加 model_websearch 工具和两个无需密钥的搜索提供方：DuckDuckGo 通用网页搜索，以及 Wikipedia OpenSearch 百科搜索。返回来源网址和摘要；需要网络连接，上游服务可能会限流。",
+    "detail": "docs/DETAIL.md"
+  }
+}
