@@ -3,73 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Open-source plugins for DeepSeek Harness.">
+  <meta name="description" content="Install SuperAgent plugins for DeepSeek Harness. Free, no-key search for models that support tools.">
   <meta name="theme-color" content="#111827">
   <title>SuperAgent Harness Plugins</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#plugins">Skip to plugins</a>
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="SuperAgent Harness Plugins home">
-      <span class="brand-mark" aria-hidden="true">S</span>
-      <span>SuperAgent <span class="muted">Plugins</span></span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#plugins">Plugins</a>
-      <a href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">GitHub <span aria-hidden="true">↗</span></a>
-    </nav>
+    <a class="brand" href="#top" aria-label="SuperAgent Harness Plugins home"><span class="brand-mark" aria-hidden="true">S</span><span>SuperAgent <span class="muted">Plugins</span></span></a>
+    <nav aria-label="Main navigation"><a href="#plugins">Plugins</a><a href="#install">Install</a><a href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">GitHub ↗</a></nav>
   </header>
-
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="live-dot"></span> OPEN PLUGINS FOR DSH</p>
+        <p class="eyebrow"><span class="live-dot"></span> PLUGINS FOR DEEPSEEK HARNESS</p>
         <h1>Give your agent<br><span class="gradient-text">more reach.</span></h1>
-        <p class="hero-description">A growing collection of practical plugins for DeepSeek Harness. Browse a tool, inspect the source, and add it to your setup.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#plugins">Explore plugins <span aria-hidden="true">↓</span></a>
-          <a class="button button-secondary" href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">View repository <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="hero-meta"><span>OPEN SOURCE</span><span class="meta-divider"></span><span>COMMUNITY BUILT</span></div>
+        <p class="hero-description">Free, no-key search without tying your agent to one model provider. Copy a source, install in Harness, and choose your search provider.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#install">Install a plugin ↓</a><a class="button button-secondary" href="#discover">Add our index ↗</a></div>
+        <div class="hero-meta"><span>NO SEARCH API KEY</span><span class="meta-divider"></span><span>MODEL INDEPENDENT</span></div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="core"><span>✳</span></div>
-        <div class="orbit-node node-search"><span>⌕</span></div>
-        <div class="orbit-node node-code"><span>{ }</span></div>
-        <div class="orbit-node node-spark"><span>✦</span></div>
-      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core"><span>✳</span></div><div class="orbit-node node-search"><span>⌕</span></div><div class="orbit-node node-code"><span>{ }</span></div><div class="orbit-node node-spark"><span>✦</span></div></div>
     </section>
-
-    <section class="catalog" id="plugins">
-      <div class="section-heading">
-        <div><p class="eyebrow">THE COLLECTION</p><h2>Explore plugins</h2></div>
-        <span class="count-pill"><span class="live-dot"></span> 1 plugin</span>
-      </div>
-
+    <section class="catalog" id="plugins" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="catalog-title">Explore plugins</h2></div><span class="count-pill">1 plugin · v1.1.0</span></div>
       <article class="plugin-card">
         <div class="plugin-icon-wrap"><img src="websearch-plugin/icon.svg" alt="" class="plugin-icon"></div>
-        <div class="plugin-info">
-          <div class="plugin-title-row"><h3>Model web search</h3><span class="tag tag-free">FREE SEARCH</span></div>
-          <p class="plugin-description">Give your model a direct web-search tool. Choose DuckDuckGo for general results or Wikipedia for encyclopedia lookups — no API key needed.</p>
-          <div class="plugin-tags"><span>DuckDuckGo</span><span>Wikipedia</span><span>No API key</span></div>
-        </div>
-        <div class="plugin-actions">
-          <a class="button button-card" href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">Install from GitHub <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins/tree/main/websearch-plugin">Source &amp; documentation</a>
-        </div>
+        <div class="plugin-info"><div class="plugin-title-row"><h3>SuperAgent free search</h3><span class="tag tag-free">NO API KEY</span></div><p class="plugin-description">General web results from DuckDuckGo, with Wikipedia as an encyclopedia-only fallback. Works with any configured model that supports tools when selected as your Harness web-search provider.</p><div class="plugin-tags"><span>DuckDuckGo</span><span>Wikipedia fallback</span><span>v1.1.0</span></div></div>
+        <div class="plugin-actions"><a class="button button-card" href="#install">Get install source ↓</a><a class="text-link" href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins/tree/main/websearch-plugin">Inspect source ↗</a></div>
       </article>
-
-      <div class="coming-soon"><span class="plus-mark">+</span><span>Have a plugin to share?</span><a href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins/issues/new">Contribute on GitHub <span aria-hidden="true">↗</span></a></div>
+      <p class="service-note">Free and no-key does not mean every upstream engine is open source: DuckDuckGo is a third-party search service. Public endpoints can block or rate-limit traffic. Wikipedia fallback is not a replacement for general web search. Queries are sent to the services used; results remain untrusted.</p>
     </section>
-
-    <section class="install-panel">
-      <div class="install-icon" aria-hidden="true">⌘</div>
-      <div><p class="eyebrow">GET STARTED</p><h2>Install from the source</h2><p>Clone the repository and add its <code>websearch-plugin</code> folder. Or, in DeepSeek Harness, open <strong>Plugins → Add plugin</strong> and select a local plugin directory. See the source repo for updates.</p></div>
-      <a class="button button-secondary" href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">Open repository <span aria-hidden="true">↗</span></a>
+    <section class="setup-section" id="install" aria-labelledby="install-title">
+      <p class="eyebrow">COPY · PASTE · INSTALL</p><h2 id="install-title">Install from a pinned source</h2>
+      <p class="setup-intro">This source points to the plugin folder at a specific release commit, not the catalog webpage. Review the source before installing code into your profile.</p>
+      <label class="source-label" for="install-source">Plugin install source</label>
+      <div class="copy-row"><textarea id="install-source" class="source-value" rows="3" readonly spellcheck="false">git+https://github.com/AgentsLabs/SuperAgent-Harness-Plugins.git#1b5a40a32faa4425812cd091ec3acc4fdfcef9a3&amp;path:/websearch-plugin</textarea><button class="button button-primary copy-button" type="button" data-copy="install-source" data-label="Plugin source">Copy source</button></div>
+      <ol class="setup-steps"><li>Open <strong>Plugins → Add plugin</strong> in DeepSeek Harness.</li><li>Paste the source above into the <strong>source input</strong>, then install and enable the bundle. The change applies to the current profile.</li><li>Open <strong>Settings → Web search</strong> and choose <strong>SuperAgent free search</strong> as the search provider.</li><li>Start a new chat with any model that supports tools and ask it to search. Your model API usage is separate; this plugin requires no search API key.</li></ol>
+      <details class="setup-details"><summary>Prefer the CLI?</summary><p>Only if you already have the <code>dsh</code> CLI available. The Desktop app does not necessarily put it on your PATH. Replace <code>desktop</code> with your target profile when needed.</p><div class="copy-row"><textarea id="install-command" class="source-value" rows="4" aria-label="CLI plugin installation command" readonly spellcheck="false">dsh plugin --profile desktop add 'git+https://github.com/AgentsLabs/SuperAgent-Harness-Plugins.git#1b5a40a32faa4425812cd091ec3acc4fdfcef9a3&amp;path:/websearch-plugin'</textarea><button class="button button-secondary copy-button" type="button" data-copy="install-command" data-label="CLI command">Copy command</button></div></details>
+      <details class="setup-details"><summary>Install from a local checkout</summary><p>Clone the repository, then use <strong>Plugins → Add plugin</strong> with the absolute path to its <code>websearch-plugin</code> folder. Keep that folder in place: local directory installs may link to the source.</p><pre><code>git clone https://github.com/AgentsLabs/SuperAgent-Harness-Plugins.git</code></pre><p>Then select <strong>SuperAgent free search</strong> in <strong>Settings → Web search</strong>.</p></details>
     </section>
+    <section class="setup-section index-section" id="discover" aria-labelledby="index-title">
+      <p class="eyebrow">OPTIONAL · DISCOVER PLUGINS</p><h2 id="index-title">Add the SuperAgent plugin index</h2><p class="setup-intro">Browse our catalog inside Harness using its optional <strong>Custom plugin indexes</strong> feature. The website is not a one-click installer: you confirm installation inside Harness.</p>
+      <label class="source-label" for="market-index">Plugin index URL</label><div class="copy-row"><textarea id="market-index" class="source-value" rows="2" readonly spellcheck="false">https://agentslabs.github.io/SuperAgent-Harness-Plugins/plugins.json</textarea><button class="button button-primary copy-button" type="button" data-copy="market-index" data-label="Plugin index URL">Copy index URL</button></div>
+      <ol class="setup-steps"><li>In <strong>Plugins</strong>, enable the optional <strong>Custom plugin indexes</strong> feature if it is available in your DSH version.</li><li>Open <strong>Plugins → Discover → Add index source</strong> and paste the index URL above. For an existing setup, use the index menu’s <strong>Manage index sources…</strong> option.</li><li>Find <strong>SuperAgent free search</strong> in Discover, inspect the details, and install it.</li><li>Select <strong>SuperAgent free search</strong> in <strong>Settings → Web search</strong>. If your version lacks Discover, use the source installation above.</li></ol>
+      <p class="service-note"><a href="plugins.json">View the machine-readable index ↗</a> · Adding an index does not automatically install every plugin or change your search provider.</p>
+    </section>
+    <div id="copy-status" class="copy-status" role="status" aria-live="polite" aria-atomic="true"></div>
+    <noscript><p class="service-note">JavaScript is disabled. Select and copy the source or index URL from the text fields above; installation still happens in DeepSeek Harness.</p></noscript>
+    <div class="coming-soon"><span class="plus-mark">+</span><span>Have a plugin to share?</span><a href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins/issues/new">Contribute on GitHub ↗</a></div>
   </main>
-
-  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span>SuperAgent <span class="muted">Plugins</span></span></a><span>Built for curious agents.</span><a href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">Open source on GitHub ↗</a></footer>
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span>SuperAgent <span class="muted">Plugins</span></span></a><span>Built for curious agents.</span><a href="https://github.com/AgentsLabs/SuperAgent-Harness-Plugins">Source on GitHub ↗</a></footer>
 </body>
 </html>

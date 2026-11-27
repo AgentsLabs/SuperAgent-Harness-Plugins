@@ -1,0 +1,34 @@
+{
+  "format": 1,
+  "title": { "en": "SuperAgent Harness Plugins", "zh": "SuperAgent Harness 插件" },
+  "description": { "en": "AgentsLabs community plugins for DeepSeek Harness. Review each source before installation." },
+  "metadata": {
+    "categories": { "search": { "title": { "en": "Web search" } } },
+    "labels": { "free": { "title": { "en": "No search API key" } } }
+  },
+  "plugins": [
+    {
+      "name": "@local/model-websearch",
+      "title": { "en": "SuperAgent free search", "zh": "SuperAgent 免费搜索" },
+      "description": { "en": "Free model-independent search and native DSH web providers. DuckDuckGo with an explicitly labelled Wikipedia encyclopedia fallback. No search credentials. Public endpoints may block or rate-limit." },
+      "icon": "websearch-plugin/icon.svg",
+      "author": "AgentsLabs",
+      "homepage": "https://agentslabs.github.io/SuperAgent-Harness-Plugins/",
+      "repository": { "url": "https://github.com/AgentsLabs/SuperAgent-Harness-Plugins", "directory": "websearch-plugin" },
+      "metadata": { "category": "search", "labels": ["free"], "keywords": ["search", "duckduckgo", "wikipedia", "model-independent"] },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1795763109,
+          "engines": { "dsh": ">=0.2.2-rc.5" },
+          "source": {
+            "type": "git",
+            "url": "https://github.com/AgentsLabs/SuperAgent-Harness-Plugins",
+            "commit": "1b5a40a32faa4425812cd091ec3acc4fdfcef9a3",
+            "path": "websearch-plugin"
+          }
+        }
+      ]
+    }
+  ]
+}
