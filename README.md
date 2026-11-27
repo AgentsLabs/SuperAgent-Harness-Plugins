@@ -11,7 +11,7 @@ Adds a `model_websearch` tool and registers two free, key-free web-search provid
 - **DuckDuckGo** for general web results.
 - **Wikipedia OpenSearch** for encyclopedia articles.
 
-**Install:** In DeepSeek Harness, open **Plugins → Add plugin** and select the `websearch-plugin` directory. The tool accepts a search query, an optional engine (`duckduckgo` or `wikipedia`), and an optional result limit (1–20). Network access is required; upstream services may rate-limit requests.
+**Install:** In DeepSeek Harness, open **Plugins → Add plugin** and select the local `websearch-plugin` directory. For example, clone this repository with `git clone https://github.com/AgentsLabs/SuperAgent-Harness-Plugins.git`, then select its `websearch-plugin` folder. The GitHub Pages site is a catalog and documentation front end; DSH installs the actual source bundle, not the webpage. The tool accepts a search query, an optional engine (`duckduckgo` or `wikipedia`), and an optional result limit (1–20). Network access is required; upstream services may rate-limit requests.
 
 [Plugin details](websearch-plugin/docs/DETAIL.md) · [Source](websearch-plugin/)
 
